@@ -15,8 +15,9 @@ class TestArea(unittest.TestCase):
         self.ladoH = 0
 
         #print("Elige el numero de la figura que requieres el area: 1 cuadrado, 2 rectangulo, 3 circulo, 4 trapecio")
-        self.choice = int(raw_input("Elige el numero de la figura que requieres el area: "+
-                                    "1 cuadrado, 2 rectangulo, 3 circulo, 4 trapecio: "))
+        self.choice = int(raw_input("Elige el numero de la figura que "+
+        "requieres el area: "+"1 cuadrado, "+
+        "2 rectangulo, 3 circulo, 4 trapecio: "))
 
         if self.choice == 1:
             self.lado = float(raw_input("Tamanio del lado del cuadrado: "))
@@ -37,21 +38,27 @@ class TestArea(unittest.TestCase):
         
     def test_area_cuadrado(self):
         #self.areaTest.areaCuadrado(self.numero1)
-        self.assertEquals(self.areaTest.areaCuadrado(self.lado), self.areaTest.areaCuadrado(self.lado))
+        self.assertEquals(self.areaTest.areaCuadrado(self.lado), 
+            self.areaTest.areaCuadrado(self.lado))
 
     def test_area_rectangulo(self):
         #self.areaTest.areaCuadrado(self.numero1)
-        self.assertEquals(self.areaTest.areaRectangulo(self.baseRectangulo, self.hRectangulo), self.areaTest.areaRectangulo(self.baseRectangulo, self.hRectangulo))
+        self.assertEquals(self.areaTest.areaRectangulo(self.baseRectangulo, 
+            self.hRectangulo), 
+            self.areaTest.areaRectangulo(self.baseRectangulo, 
+            self.hRectangulo))
 
     def test_area_circulo(self):
         #self.areaTest.areaCuadrado(self.numero1)
         self.assertEquals(self.areaTest.areaCirculo(self.radio), 
-                          self.areaTest.areaCirculo(self.radio))
+            self.areaTest.areaCirculo(self.radio))
         
     def test_area_trapecio(self):
         #self.areaTest.areaCuadrado(self.numero1)
-        self.assertEquals(self.areaTest.areaTrapecio(self.ladoA, self.ladoB, self.ladoH), 
-                          self.areaTest.areaTrapecio(self.ladoA, self.ladoB, self.ladoH))                       
+        self.assertEquals(self.areaTest.areaTrapecio(self.ladoA, 
+            self.ladoB, self.ladoH), 
+        self.areaTest.areaTrapecio(self.ladoA, 
+            self.ladoB, self.ladoH))                       
 
 if __name__ == '__main__': #pragma: no cover
     unittest.main()
