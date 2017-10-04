@@ -2,6 +2,7 @@ class Areas():
     def __init__(self):
         ##self.area = 0.0
         self.pi = 3.1416
+        #segundo commit
 
     ##def area(self):
     ##  return self.area    
