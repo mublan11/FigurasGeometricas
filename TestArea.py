@@ -14,6 +14,16 @@ class TestArea(unittest.TestCase):
         self.ladoB = 0
         self.ladoH = 0
 
+        """Asigancion de variables para Travis ya que la entrada no se resolverla"""
+        self.lado = 4
+        self.baseRectangulo = 10
+        self.hRectangulo = 9
+        self.radio = 3 
+        self.ladoA = 11
+        self.ladoB = 05
+        self.ladoH = 15
+
+        """
         self.choice = int(raw_input("Elige el numero de la figura que "+
         "requieres el area: "+"1 cuadrado, "+
         "2 rectangulo, 3 circulo, 4 trapecio: "))
@@ -34,6 +44,7 @@ class TestArea(unittest.TestCase):
 
         else:
             print("Ese numero no")   #pragma: no cover
+        """
         
     def test_area_cuadrado(self):
         #self.areaTest.areaCuadrado(self.numero1)
