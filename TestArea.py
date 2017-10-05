@@ -14,7 +14,6 @@ class TestArea(unittest.TestCase):
         self.ladoB = 0
         self.ladoH = 0
 
-        #print("Elige el numero de la figura que requieres el area: 1 cuadrado, 2 rectangulo, 3 circulo, 4 trapecio")
         self.choice = int(raw_input("Elige el numero de la figura que "+
         "requieres el area: "+"1 cuadrado, "+
         "2 rectangulo, 3 circulo, 4 trapecio: "))
@@ -46,7 +45,7 @@ class TestArea(unittest.TestCase):
         self.assertEquals(self.areaTest.areaRectangulo(self.baseRectangulo, 
             self.hRectangulo), 
             self.areaTest.areaRectangulo(self.baseRectangulo, 
-            self.hRectangulo))
+                self.hRectangulo))
 
     def test_area_circulo(self):
         #self.areaTest.areaCuadrado(self.numero1)
