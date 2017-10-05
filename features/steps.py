@@ -26,9 +26,9 @@ def dado_que_introduzco_el_numero_group1_cuadrado(step, num):
 def obtengo_un_resultado_de_group1(step, esperado):
     obtenido = world.figura.obtener_resultado()
     a = 'El resultado esperado es '
-    b = ' y el obtenido es ' + 
-    assert str(esperado) == str(obtenido), str(a) +
-    str(esperado) + str(b) + str(obtenido)
+    b = ' y el obtenido es '
+    assert str(esperado) == str(obtenido), str(a) + str(esperado) + 
+    str(b) + str(obtenido)
 
 
 @step(u'Dado que introduzco el numero "([^"]*)" y "([^"]*)" rectangulo')
