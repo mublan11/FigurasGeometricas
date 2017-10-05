@@ -26,7 +26,7 @@ def dado_que_introduzco_el_numero_group1_cuadrado(step, num):
 def obtengo_un_resultado_de_group1(step, esperado):
     obtenido = world.figura.obtener_resultado()
     a = 'El resultado esperado es '
-    b = ' y el obtenido es '
+    b = ' y el obtenido es ' + 
     assert str(esperado) == str(obtenido), str(a) +
     str(esperado) + str(b) + str(obtenido)
 
@@ -44,6 +44,7 @@ def dado_que_introduzco_el_radio_de_group1(step, num):
 
 
 @step(u'Dado que introduzco los numeros "([^"]*)", "([^"]*)", "([^"]*)"')
-def dado_que_introduzco_los_numeros_group1_group2_group3(step, num1, num2, num3):
+def dado_que_introduzco_los_numeros_group1_group2_group3(step, 
+    num1, num2, num3):
     world.figura = Figuras()
     world.figura.areaTrapecio(int(num1), int(num2), int(num3))
